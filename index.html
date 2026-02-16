@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced Resume & CV Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="main">
+
+  <h1>Resume & CV Generator</h1>
+  <p class="tagline">Fill details ➜ Preview ➜ Download Resume / CV PDF</p>
+
+  <div class="grid">
+
+    <!-- FORM -->
+    <div class="form-box">
+      <h2>Input Form</h2>
+
+      <label>Upload Photo</label>
+      <input type="file" id="photo" accept="image/*">
+
+      <label>Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label>Email</label>
+      <input type="text" id="email" placeholder="Enter email">
+
+      <label>Phone</label>
+      <input type="text" id="phone" placeholder="Enter phone number">
+
+      <label>Address</label>
+      <input type="text" id="address" placeholder="Enter address">
+
+      <label>Professional Summary</label>
+      <textarea id="summary" placeholder="Write summary"></textarea>
+
+      <label>Skills (comma separated)</label>
+      <input type="text" id="skills" placeholder="Java, HTML, CSS, JS">
+
+      <label>Education</label>
+      <textarea id="education" placeholder="Degree, College, Year"></textarea>
+
+      <label>Experience</label>
+      <textarea id="experience" placeholder="Internship / Job experience"></textarea>
+
+      <label>Projects</label>
+      <textarea id="projects" placeholder="Project Name + Description"></textarea>
+
+      <label>Certificates</label>
+      <textarea id="certificates" placeholder="Certificates list"></textarea>
+
+      <label>Achievements</label>
+      <textarea id="achievements" placeholder="Achievements list"></textarea>
+
+      <label>Languages</label>
+      <input type="text" id="languages" placeholder="English, Hindi, Marathi">
+
+      <button onclick="updatePreview()">Preview</button>
+
+      <div class="btn-row">
+        <button class="resume-btn" onclick="downloadResume()">Download Resume PDF</button>
+        <button class="cv-btn" onclick="downloadCV()">Download CV PDF</button>
+      </div>
+    </div>
+
+
+    <!-- PREVIEW -->
+    <div class="preview-box" id="preview">
+      <h2>Live Preview</h2>
+
+      <div class="preview-header">
+        <img id="outPhoto" src="" alt="Photo Preview" style="display:none;">
+        <div>
+          <h1 id="outName">Your Name</h1>
+          <p id="outEmail">Email:</p>
+          <p id="outPhone">Phone:</p>
+          <p id="outAddress">Address:</p>
+        </div>
+      </div>
+
+      <hr>
+
+      <h3>Professional Summary</h3>
+      <p id="outSummary"></p>
+
+      <h3>Skills</h3>
+      <p id="outSkills"></p>
+
+      <h3>Education</h3>
+      <p id="outEducation"></p>
+
+      <h3>Experience</h3>
+      <p id="outExperience"></p>
+
+      <h3>Projects</h3>
+      <p id="outProjects"></p>
+
+      <h3>Certificates</h3>
+      <p id="outCertificates"></p>
+
+      <h3>Achievements</h3>
+      <p id="outAchievements"></p>
+
+      <h3>Languages</h3>
+      <p id="outLanguages"></p>
+
+    </div>
+
+  </div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
