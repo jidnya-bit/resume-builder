@@ -105,13 +105,7 @@ The objective of this project is to develop a practical web application that sim
 
 ---
 
-## 📸 Preview
 
-Add screenshots of your project here:
-
-```markdown
-![Resume Builder Preview](screenshots/preview.png)
-```
 
 ---
 
